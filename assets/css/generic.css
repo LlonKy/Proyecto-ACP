@@ -1,0 +1,21 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-group{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card{
+    margin-top: 2.5rem;
+    padding: 1rem;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+}
