@@ -18,3 +18,15 @@
 	- linea de 3px de color asociado al tipo
 	- imagen que ocupe todo
 	
+	
+	
+Extra n1
+	Parte de contacto
+	Ventana modal al hacer click en el menu
+	formulario para poner el nombre,correo,texto largo, boton de enviar
+	los label son float label de boostrap
+	X para cerrar la ventana
+	
+Extra n2
+	Quitarle la seleccion a los iconos para que no salga el coso azul
+	a todo botón que salga ponerle un icono representativo	
