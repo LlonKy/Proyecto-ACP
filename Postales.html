@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JapanTours - Postcards</title>
+
+    <!-- Bootstrap CSS y JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="./assets/css/generic.css" />
+    <link rel="icon" type="image/png" href="./assets/img/japan-flag.png" sizes="32x32"/>
+</head>
+
+<body>
+    <!-- Ventana Modal (boton de contactar) -->
+    <div class="modal fade" id="modalWindow" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contact</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="Jhon Doe" required
+                                minlength="3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="email@gmail.com" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="msg" placeholder="Message" required></textarea>
+                            <label for="msg">Message</label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">
+                                Send
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container d-flex align-items-center justify-content-between">
+                <a class="navbar-brand fw-bold fs-4 d-flex align-items-center" href="JapanTours.html">
+                    <span class="material-icons me-2">temple_buddhist</span> JapanTours
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav mx-auto d-flex flex-column flex-lg-row align-items-center gap-3 mb-0">
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center" href="viajes1.html">
+                                <span class="material-icons me-1">explore</span> Tours
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center" href="Postales.html">
+                                <span class="material-icons me-1">image</span> Postcards
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center" href="Naturaleza.html">
+                                <span class="material-icons me-1">park</span> Nature
+                            </a>
+                        </li>
+                        <li class="nav-item d-lg-none mt-2">
+                            <a href="#" class="btn btn-danger w-100 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#modalWindow">
+                                <span class="material-icons me-1">contact_mail</span> Contact Us!
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Boton para escritorio -->
+                <a href="#" class="btn btn-danger ms-lg-3 d-none d-lg-flex align-items-center" data-bs-toggle="modal"
+                    data-bs-target="#modalWindow">
+                    <span class="material-icons me-1">contact_mail</span> Contact Us!
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="postal mt-5">
+            <div class="postal-inner">
+                <div class="frontal">
+                    <img src="./assets/img/tokyo.jpg" />
+                    <h5>Tokyo</h5>
+                </div>
+                <div class="reverso">
+                    <div class="left">
+                        <div class="descripcion">
+                            In the heart of Tokyo, amidst neon streets and buzzing neighborhoods, you can experience
+                            both traditional and modern Japan in one glance.
+                        </div>
+                        <div class="nombre">
+                            David García Aragunde
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="sello"></div>
+                        <div class="lineas mt-4">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="postal mt-5">
+            <div class="postal-inner">
+                <div class="frontal">
+                    <img src="./assets/img/kyoto.jpg" alt="Postal-Kioto" />
+                    <h5>Kyoto</h5>
+                </div>
+                <div class="reverso">
+                    <div class="left">
+                        <div class="descripcion">
+                            Kyoto, the cultural heart of Japan, is famous for its serene temples, beautiful gardens, and
+                            traditional tea houses.
+                        </div>
+                        <div class="nombre">
+                            David García Aragunde
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="sello"></div>
+                        <div class="lineas mt-4">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="postal mt-5">
+            <div class="postal-inner">
+                <div class="frontal">
+                    <img src="./assets/img/osaka.jpg" alt="Postal-Osaka" />
+                    <h5>Osaka</h5>
+                </div>
+                <div class="reverso">
+                    <div class="left">
+                        <div class="descripcion">
+                            Osaka is a bustling metropolis known for its modern architecture, lively nightlife, and
+                            amazing street food.
+                        </div>
+                        <div class="nombre">
+                            David García Aragunde
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="sello"></div>
+                        <div class="lineas mt-4">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="postal mt-5">
+            <div class="postal-inner">>
+                <div class="frontal">
+                    <img src="./assets/img/nara.jpg" alt="Postal-Nara" />
+                    <h5>Nara</h5>
+                </div>
+                <div class="reverso">
+                    <div class="left">
+                        <div class="descripcion">
+                            Nara is a historic city with ancient temples, peaceful parks, and friendly deer roaming
+                            freely around its streets.
+                        </div>
+                        <div class="nombre">
+                            David García Aragunde
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="sello"></div>
+                        <div class="lineas mt-4">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer bg-white py-3 mt-5">
+        <div class="container text-center">
+            <p class="m-0">
+                Página creada por David García Aragunde -
+                <a href="referencias.html" class="text-danger text-decoration-underline">Referencias</a>.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

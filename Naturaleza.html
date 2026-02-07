@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JapanTours - Nature</title>
+
+  <!-- Bootstrap CSS y JS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="./assets/css/generic.css" />
+  <link rel="icon" type="image/png" href="./assets/img/japan-flag.png" sizes="32x32" />
+</head>
+
+<body>
+  <!-- Ventana Modal (boton de contactar) -->
+  <div class="modal fade" id="modalWindow" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Contact</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="name" placeholder="Jhon Doe" required minlength="3">
+              <label for="name">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="email" placeholder="email@gmail.com" required>
+              <label for="email">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+              <textarea class="form-control" id="msg" placeholder="Message" required></textarea>
+              <label for="msg">Message</label>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a class="navbar-brand fw-bold fs-4 d-flex align-items-center" href="JapanTours.html">
+          <span class="material-icons me-2">temple_buddhist</span> JapanTours
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav mx-auto d-flex flex-column flex-lg-row align-items-center gap-3 mb-0">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" href="viajes1.html">
+                <span class="material-icons me-1">explore</span> Tours
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" href="Postales.html">
+                <span class="material-icons me-1">image</span> Postcards
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" href="Naturaleza.html">
+                <span class="material-icons me-1">park</span> Nature
+              </a>
+            </li>
+            <li class="nav-item d-lg-none mt-2">
+              <a href="#" class="btn btn-danger w-100 d-flex align-items-center justify-content-center"
+                data-bs-toggle="modal" data-bs-target="#modalWindow">
+                <span class="material-icons me-1">contact_mail</span> Contact Us!
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Boton para escritorio -->
+        <a href="#" class="btn btn-danger ms-lg-3 d-none d-lg-flex align-items-center" data-bs-toggle="modal"
+          data-bs-target="#modalWindow">
+          <span class="material-icons me-1">contact_mail</span> Contact Us!
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <h1>Nature of Japan</h1>
+    <div class="row g-4">
+      <div class="col-12 col-md-6">
+        <div class="card h-100">
+          <div class="card-header-custom d-flex align-items-center p-2 planta">
+            <h5>Cherry Blossom</h5>
+            <span class="material-icons">grass</span>
+          </div>
+          <div class="card-line"></div>
+          <img src="./assets/img/cherry-blossom2.jpg" class="card-img-bottom" alt="Cherry Blossom">
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="card h-100">
+          <div class="card-header-custom d-flex align-items-center p-2 planta">
+            <h5>Bamboo Forest</h5>
+            <span class="material-icons">grass</span>
+          </div>
+          <div class="card-line"></div>
+          <img src="./assets/img/bamboo-forest.jpg" class="card-img-bottom" alt="Bamboo Forest">
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="card h-100">
+          <div class="card-header-custom d-flex align-items-center p-2 planta">
+            <h5>Bonsais</h5>
+            <span class="material-icons">grass</span>
+          </div>
+          <div class="card-line"></div>
+          <img src="./assets/img//bonsai.jpg" class="card-img-bottom" alt="Bamboo Forest">
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="card h-100">
+          <div class="card-header-custom d-flex align-items-center p-2 animal">
+            <h5>Nara Deer</h5>
+            <span class="material-icons">pets</span>
+          </div>
+          <div class="card-line"></div>
+          <img src="./assets/img/nara-deer.jpg" class="card-img-bottom" alt="Bamboo Forest">
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="card h-100">
+          <div class="card-header-custom d-flex align-items-center p-2 animal">
+            <h5>Tanuki</h5>
+            <span class="material-icons">pets</span>
+          </div>
+          <div class="card-line"></div>
+          <img src="./assets/img/tanuki.jpg" class="card-img-bottom" alt="Bamboo Forest">
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="card h-100">
+          <div class="card-header-custom d-flex align-items-center p-2 animal">
+            <h5>Japanese Macaque</h5>
+            <span class="material-icons">pets</span>
+          </div>
+          <div class="card-line"></div>
+          <img src="./assets/img/japanese-macaque.jpg" class="card-img-bottom" alt="Japanese Macaque">
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="card h-100">
+          <div class="card-header-custom d-flex align-items-center p-2 animal">
+            <h5>Japanese Squirrel</h5>
+            <span class="material-icons">pets</span>
+          </div>
+          <div class="card-line"></div>
+          <img src="./assets/img/squirrel.jpg" class="card-img-bottom" alt="Dolphin">
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="card h-100">
+          <div class="card-header-custom d-flex align-items-center p-2 acuatico">
+            <h5>Japanese Crane</h5>
+            <span class="material-icons">water</span>
+          </div>
+          <div class="card-line"></div>
+          <img src="./assets/img/japanese-crane.jpg" class="card-img-bottom" alt="Japanese Crane">
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="card h-100">
+          <div class="card-header-custom d-flex align-items-center p-2 acuatico">
+            <h5>Mandarin Duck</h5>
+            <span class="material-icons">water</span>
+          </div>
+          <div class="card-line"></div>
+          <img src="./assets/img/mandarin-duck.jpg" class="card-img-bottom" alt="Mandarin Duck">
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="card h-100">
+          <div class="card-header-custom d-flex align-items-center p-2 acuatico">
+            <h5>Sea Turtle</h5>
+            <span class="material-icons">water</span>
+          </div>
+          <div class="card-line"></div>
+          <img src="./assets/img/sea-turtle.jpg" class="card-img-bottom" alt="Sea Turtle">
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer class="footer bg-white py-3 mt-5">
+    <div class="container text-center">
+      <p class="m-0">
+        Página creada por David García Aragunde -
+        <a href="referencias.html" class="text-danger text-decoration-underline">Referencias</a>.
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

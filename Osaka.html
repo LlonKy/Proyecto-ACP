@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JapanTours - Osaka</title>
+
+    <!-- Bootstrap CSS y JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="./assets/css/generic.css" />
+    <link rel="icon" type="image/png" href="./assets/img/japan-flag.png" sizes="32x32"/>
+</head>
+
+<body>
+  <!-- Ventana Modal (boton de contactar) -->
+  <div class="modal fade" id="modalWindow" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Contact</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="name" placeholder="Jhon Doe" required minlength="3">
+              <label for="name">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="email" placeholder="email@gmail.com" required>
+              <label for="email">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+              <textarea class="form-control" id="msg" placeholder="Message" required></textarea>
+              <label for="msg">Message</label>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a class="navbar-brand fw-bold fs-4 d-flex align-items-center" href="JapanTours.html">
+          <span class="material-icons me-2">temple_buddhist</span> JapanTours
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav mx-auto d-flex flex-column flex-lg-row align-items-center gap-3 mb-0">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" href="viajes1.html">
+                <span class="material-icons me-1">explore</span> Tours
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" href="Postales.html">
+                <span class="material-icons me-1">image</span> Postcards
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" href="Naturaleza.html">
+                <span class="material-icons me-1">park</span> Nature
+              </a>
+            </li>
+            <li class="nav-item d-lg-none mt-2">
+              <a href="#" class="btn btn-danger w-100 d-flex align-items-center justify-content-center"
+                data-bs-toggle="modal" data-bs-target="#modalWindow">
+                <span class="material-icons me-1">contact_mail</span> Contact Us!
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Boton para escritorio -->
+        <a href="#" class="btn btn-danger ms-lg-3 d-none d-lg-flex align-items-center" data-bs-toggle="modal"
+          data-bs-target="#modalWindow">
+          <span class="material-icons me-1">contact_mail</span> Contact Us!
+        </a>
+      </div>
+    </nav>
+  </header>
+  <!-- Main -->
+  <main class="container my-4">
+    <h1 class="mb-4">Places in Osaka</h1>
+
+    <!-- Card: Osaka -->
+    <div class="card mb-4 shadow-sm">
+      <!-- Header -->
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-2">
+          <span class="material-icons">explore</span>
+          <h5>Osaka</h5>
+        </div>
+        <div class="d-flex align-items-center gap-1">
+          <span class="text-muted">21/09/2026</span>
+          <span class="material-icons">calendar_month</span>
+        </div>
+      </div>
+
+      <!-- Photos -->
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img src="./assets/img/osaka.jpg" class="img w-100" alt="Photo 1">
+        </div>
+        <div class="col-md-6">
+          <img src="./assets/img/osaka2.jpg" class="img w-100" alt="Photo 2">
+        </div>
+      </div>
+
+      <!-- Description -->
+      <div class="card-body">
+        <p class="card-text">
+          Osaka is one of Japan’s most vibrant and dynamic cities, known for its friendly atmosphere,
+          modern architecture and rich cultural heritage.
+        </p>
+        <p class="card-text">
+          Famous for its street food, lively neighborhoods and historical landmarks,
+          Osaka offers a perfect mix of tradition, entertainment and urban life.
+        </p>
+      </div>
+
+      <!-- Footer -->
+      <div class="card-footer d-flex justify-content-between align-items-center">
+        <div class="text-warning">
+          <span class="material-icons">star</span>
+          <span class="material-icons">star</span>
+          <span class="material-icons">star</span>
+          <span class="material-icons">star</span>
+          <span class="material-icons">star_border</span>
+        </div>
+        <div class="d-flex align-items-center gap-.2">
+          <span class="text-muted">Osaka, Japan</span>
+          <span class="material-icons">location_on</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card: Bridges of Osaka -->
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-1">
+          <span class="material-icons">architecture</span>
+          <h5>Osaka Bridges</h5>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <span class="text-muted">22/09/2026</span>
+          <span class="material-icons">calendar_month</span>
+        </div>
+      </div>
+
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img src="./assets/img/bridges.jpg" class="img w-100" alt="Photo 1">
+        </div>
+        <div class="col-md-6">
+          <img src="./assets/img/bridges2.jpg" class="img w-100" alt="Photo 2">
+        </div>
+      </div>
+
+      <div class="card-body">
+        <p class="card-text">
+          Osaka is crossed by numerous rivers and canals, connected by iconic bridges,
+          especially in areas like Dotonbori and Nakanoshima.
+        </p>
+        <p class="card-text">
+          Walking across these bridges offers stunning city views, neon lights at night
+          and a glimpse into Osaka’s energetic urban lifestyle.
+        </p>
+      </div>
+
+      <div class="card-footer d-flex justify-content-between align-items-center">
+        <div class="text-warning">
+          <span class="material-icons">star</span>
+          <span class="material-icons">star</span>
+          <span class="material-icons">star</span>
+          <span class="material-icons">star</span>
+          <span class="material-icons">star_border</span>
+        </div>
+        <div class="d-flex align-items-center gap-.2">
+          <span class="text-muted">Osaka, Japan</span>
+          <span class="material-icons">location_on</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card: Shitennoji Temple -->
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-2">
+          <span class="material-icons">church</span>
+          <h5>Shitennoji Temple</h5>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <span class="text-muted">27/09/2026</span>
+          <span class="material-icons">calendar_month</span>
+        </div>
+      </div>
+
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img src="./assets/img/shiteonji-temple.jpg" class="img w-100" alt="Photo 1">
+        </div>
+        <div class="col-md-6">
+          <img src="./assets/img/shinteonji-temple2.jpg" class="img w-100" alt="Photo 2">
+        </div>
+      </div>
+
+      <div class="card-body">
+        <p class="card-text">
+          Shitennoji Temple is one of Japan’s oldest Buddhist temples and a key spiritual
+          landmark in Osaka.
+        </p>
+        <p class="card-text">
+          Founded in the 6th century, it represents centuries of history, tradition
+          and religious devotion, making it a must-visit cultural site.
+        </p>
+      </div>
+
+      <div class="card-footer d-flex justify-content-between align-items-center">
+        <div class="text-warning">
+          <span class="material-icons">star</span>
+          <span class="material-icons">star</span>
+          <span class="material-icons">star</span>
+          <span class="material-icons">star</span>
+          <span class="material-icons">star_half</span>
+        </div>
+        <div class="d-flex align-items-center gap-.2">
+          <span class="text-muted">Osaka, Japan</span>
+          <span class="material-icons">location_on</span>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-2">
+          <span class="material-icons">castle</span>
+          <h5>Osaka Castle</h5>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <span class="text-muted">30/09/2026</span>
+          <span class="material-icons">calendar_month</span>
+        </div>
+      </div>
+
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img src="./assets/img/osaka-castle.jpg" class="img w-100" alt="Photo 1">
+        </div>
+        <div class="col-md-6">
+          <img src="./assets/img/osaka-castle2.jpg" class="img w-100" alt="Photo 2">
+        </div>
+      </div>
+
+      <div class="card-body">
+        <p class="card-text">
+          Osaka Castle is a historic landmark and one of Japan’s most famous castles,
+          symbolizing the power and heritage of Osaka.
+        </p>
+        <p class="card-text">
+          Originally built in the 16th century, it has been reconstructed multiple times,
+          surrounded by beautiful parks and cherry blossoms, making it a must-visit site for history and nature lovers.
+        </p>
+      </div>
+
+      <div class="card-footer d-flex justify-content-between align-items-center">
+        <div class="text-warning">
+          <span class="material-icons">star</span>
+          <span class="material-icons">star</span>
+          <span class="material-icons">star</span>
+          <span class="material-icons">star</span>
+          <span class="material-icons">star_half</span>
+        </div>
+        <div class="d-flex align-items-center gap-.2">
+          <span class="text-muted">Osaka, Japan</span>
+          <span class="material-icons">location_on</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- footer -->
+  <footer class="footer bg-white py-3 mt-5">
+    <div class="container text-center">
+      <p class="m-0">
+        Página creada por David García Aragunde -
+        <a href="referencias.html" class="text-danger text-decoration-underline">Referencias</a>.
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
